@@ -272,8 +272,9 @@
 {
     GBALbumPickerCollectionViewCell *cell =(GBALbumPickerCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
 
+    UIImage *image = [UIImage imageWithCGImage:[cell.thisELCAsset.asset defaultRepresentation].fullScreenImage];
 
-    [self broswerThisImage:cell.gbImageView.image fromCellImageView:cell.gbImageView];
+    [self broswerThisImage:image fromCellImageView:cell.gbImageView];
 }
 
 /*
